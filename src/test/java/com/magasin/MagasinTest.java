@@ -8,31 +8,34 @@ class MagasinTest {
 
     @Test
     void foo() {
-        Item[] items = new Item[] {
+        Item[] items = new Item[]{
                 new Item("Comté", 10, 15),
                 new Item("Comté", -4, 15),
                 new Item("Comté", 1, 50),
 
-                //GM Pass
+                //Pass
                 new Item("Pass VIP Concert", 25, 12),
                 new Item("Pass VIP Concert", 8, 12),
                 new Item("Pass VIP Concert", 3, 12),
                 new Item("Pass VIP Concert", -1, 12),
 
-                //GM Kryptonite
+                //Kryptonite
                 new Item("Kryptonite", 10, 54),
                 new Item("Kryptonite", 0, 80),
                 new Item("Kryptonite", -2, 80),
 
-                //GM Normal
+                //Normal
                 new Item("Normal", 20, 10),
-                new Item("Normal",0,10),
-                new Item("Normal",-4,10),
+                new Item("Normal", 0, 10),
+                new Item("Normal", -4, 10),
 
                 //Pouvoirs magique
                 new Item("Pouvoirs Magiques", 20, 10),
-                new Item("Pouvoirs Magiques",0,10),
-                new Item("Pouvoirs Magiques",-4,10),
+                new Item("Pouvoirs Magiques", 0, 10),
+                new Item("Pouvoirs Magiques", -4, 10),
+
+                //Chocolat (application du TDD -3 quality)
+                new Item("Chocolat", 15, 30),
 
         };
 
@@ -77,8 +80,10 @@ class MagasinTest {
 //        assertEquals(19, app.items[13].sellIn);
 //        assertEquals(6, app.items[14].quality);
 //        assertEquals(-1, app.items[14].sellIn);
-        assertEquals(6, app.items[15].quality);
-        assertEquals(-5, app.items[15].sellIn);
+//        assertEquals(6, app.items[15].quality);
+//        assertEquals(-5, app.items[15].sellIn);
+        assertEquals(27, app.items[16].quality);
+        assertEquals(14, app.items[16].sellIn);
 
 
     }
