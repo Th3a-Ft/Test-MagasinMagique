@@ -36,7 +36,14 @@ class Magasin {
                     } else {
                         item.quality = 0;
                     }
-                } else {
+                } else if (item.name.equals("Pouvoirs Magiques")){
+                    if (item.sellIn > 0) {
+                        item.quality -= 2;
+                    } else {
+                        item.quality -= 4;
+                    }
+                }
+                else {
                     if (item.sellIn > 0) {
                         item.quality -= 1;
                     } else {
