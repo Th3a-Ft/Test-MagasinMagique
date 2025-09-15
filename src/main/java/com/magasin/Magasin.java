@@ -19,7 +19,7 @@ class Magasin {
             }
 
             //quality
-            if (item.quality < 50 && item.quality >0) {
+            if (item.quality < 50 && item.quality > 0) {
                 if (item.name.equals("Comté")) {
                     if (item.sellIn > 0) {
                         item.quality += 1;
@@ -43,9 +43,8 @@ class Magasin {
                         item.quality -= 4;
                     }
                 } else if (item.name.equals("Chocolat")) {
-                    if (item.sellIn > 0) {
-                        item.quality -= 3;
-                    }
+                    item.quality -= 3;
+
                 } else {
                     if (item.sellIn > 0) {
                         item.quality -= 1;
