@@ -42,6 +42,10 @@ class Magasin {
                     } else {
                         item.quality -= 4;
                     }
+                } else if (item.name.equals("Chocolat")) {
+                    if (item.sellIn > 0) {
+                        item.quality -= 3;
+                    }
                 } else {
                     if (item.sellIn > 0) {
                         item.quality -= 1;
